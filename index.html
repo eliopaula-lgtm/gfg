@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil Acessível</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Acessibilidade: Atalho de navegação por teclado -->
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+        <div class="container">
+            <h1>👤 Meu Perfil Acessível</h1>
+            <p class="subtitulo">Conheça um pouco sobre este estudante.</p>
+        </div>
+    </header>
+
+    <main id="conteudo-principal" class="container">
+
+        <!-- CARTÃO DE PERFIL COM AVATAR E DADOS -->
+        <section class="cartao-perfil" aria-label="Informações Pessoais">
+            <img src="https://via.placeholder.com/150/0d47a1/ffffff?text=Avatar" alt="Avatar do estudante João com fundo azul" class="avatar">
+            
+            <div class="dados-estudante">
+                <h2>João</h2>
+                <ul class="lista-dados">
+                    <li><strong>Idade:</strong> 16 anos</li>
+                    <li><strong>Curso:</strong> Técnico em Desenvolvimento de Sistemas</li>
+                    <li><strong>Interesses:</strong> Tecnologia, jogos e música</li>
+                    <li><strong>Objetivo:</strong> Aprender programação e criar sistemas acessíveis</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- CARDS DE INFORMAÇÕES -->
+        <div class="grid-cards">
+
+            <!-- SEÇÃO: EU GOSTO DE... -->
+            <section class="card-info">
+                <h2>Eu gosto de...</h2>
+                <ul class="lista-gostos">
+                    <li>🎮 Jogos eletrônicos</li>
+                    <li>🎵 Ouvir música</li>
+                    <li>💻 Computadores e tecnologia</li>
+                    <li>⚽ Praticar esportes</li>
+                    <li>📚 Aprender coisas novas</li>
+                </ul>
+            </section>
+
+            <!-- SEÇÃO: COMO EU APRENDO MELHOR? -->
+            <section class="card-info">
+                <h2>📖 Como eu aprendo melhor?</h2>
+                <ul class="lista-aprendizado">
+                    <li>As instruções são claras e objetivas.</li>
+                    <li>As atividades estão bem organizadas.</li>
+                    <li>Tenho exemplos práticos para seguir.</li>
+                    <li>As informações estão divididas em etapas simples.</li>
+                </ul>
+            </section>
+
+        </div>
+
+        <!-- SEÇÃO: MINHA ROTINA -->
+        <section class="card-info secao-rotina">
+            <h2>📅 Minha Rotina</h2>
+            <div class="tabela-container">
+                <table class="tabela-rotina">
+                    <caption>Horários das principais atividades diárias</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Horário</th>
+                            <th scope="col">Atividade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>07:00</td>
+                            <td>Acordar e tomar café</td>
+                        </tr>
+                        <tr>
+                            <td>08:00</td>
+                            <td>Aulas na Escola</td>
+                        </tr>
+                        <tr>
+                            <td>12:00</td>
+                            <td>Almoço</td>
+                        </tr>
+                        <tr>
+                            <td>13:30</td>
+                            <td>Estudos e Projetos de Programação</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- SEÇÃO BOTÃO -->
+        <div class="area-botao">
+            <button type="button" class="btn-informacoes" aria-label="Ver informações completas do estudante">
+                📋 Ver informações completas
+            </button>
+        </div>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+        <div class="container">
+            <p>&copy; 2026 Meu Perfil Acessível — Projeto de Interface Web Acessível.</p>
+            <p>Desenvolvido com foco em clareza, previsibilidade e acessibilidade digital.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
